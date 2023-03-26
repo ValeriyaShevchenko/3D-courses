@@ -12,15 +12,21 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 header__content flex">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 header__content flex">
           <a class="header__logo" href="#">
             <img src="./image/logo.svg" alt="Логотип">
           </a>
+          <button class="header__burger burger btn-reset" aria-label="Меню">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
           <nav class="header__nav nav">
             <ul class="nav__list list-reset flex">
               <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
@@ -39,7 +45,7 @@
     <section class="hero">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 hero__content flex">
+          <div class="col-lg-5 col-md-6 col-sm-12 col-12 hero__content flex">
             <h1 class="title">
               Курсы 3D моделирования
             </h1>
@@ -50,8 +56,8 @@
               Выбрать курс
             </a>
           </div>
-          <div class="col-lg-7 flex">
-            <img class="hero__img" src="./image/hero__img.svg" alt="3д рисунок" aria-hidden="true">
+          <div class="col-lg-7 col-md-6 col-sm-0 col-0 flex">
+            <div class="hero__img"></div>
           </div>
         </div>
       </div>
@@ -60,10 +66,10 @@
     <section class="advantages" id="advantages">
       <div class="container">
         <div class="row advantages__top">
-          <div class="col-lg-2 flex">
-            <img class="advantages__img" src="./image/advavtages__img.svg" alt="3д рисунок" aria-hidden="true" >
+          <div class="col-lg-2 col-md-4 col-sm-4 col-0 flex">
+            <div class="advantages__img"></div>
           </div>
-          <div class="col-lg-10">
+          <div class="col-lg-10 col-md-8 col-sm-8 col-12">
             <h2 class="advantages__title">
               Преимущества обучения в&nbsp;skillbox
             </h2>
@@ -73,21 +79,21 @@
           </div>
         </div>
         <ul class="row advantages__list list-reset-col">
-          <li class="col-lg-4">
+          <li class="col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="advantages__item advantages__item--bg1">
               <p class="advantages__component">
                 Результат вашего обучения является самым важным для нас приоритетом
               </p>
             </div>
           </li>
-          <li class="col-lg-4">
+          <li class="col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="advantages__item advantages__item--bg2">
               <p class="advantages__component">
                 Лично познакомитесь с&nbsp;одним из&nbsp;своих будущих преподавателей
               </p>
             </div>
           </li>
-          <li class="col-lg-4">
+          <li class="col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="advantages__item advantages__item--bg3">
               <p class="advantages__component">
                 Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным
@@ -104,26 +110,26 @@
           Преподаватели курсов
         </h2>
         <ul class="row teachers__list list-reset-col">
-          <li class="col-lg-3">
+          <li class="col-lg-3 col-md-6 col-sm-6">
             <div class="teachers__item">
               <picture class="teachers__img">
-                <!-- <source srcset="./image/stages-img1-320.jpg" media="(max-width: 600px)">
-                <source srcset="./image/stages-img1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./image/stages-img1-1024.jpg" media="(max-width: 1200px)"> -->
+                <source srcset="./image/teacher__img-1-320.jpg" media="(max-width: 575px)">
+                <source srcset="./image/teacher__img-1-576.jpg" media="(max-width: 767px)">
+                <source srcset="./image/teacher__img-1-768.jpg" media="(max-width: 991px)">
                 <img src="./image/teacher__img-1-1110.jpg" alt="Фото преподавателя">
               </picture>
               <h3 class="teachers__subtitle item-title">Владимир Петров</h3>
               <p class="teachers__descr item-descr">
-                Лишь непосредственные участники технического прогресса неоднозначны и&nbsp;будут в&nbsp;равной степени предоставлены&nbsp;сами себе.
+                Лишь непосредственные участники технического прогресса неоднозначны и будут в&nbsp;равной степени предоставлены&nbsp;сами себе.
               </p>
             </div>
           </li>
-          <li class="col-lg-3">
+          <li class="col-lg-3 col-md-6 col-sm-6">
             <div class="teachers__item">
               <picture class="teachers__img">
-                <!-- <source srcset="./image/stages-img1-320.jpg" media="(max-width: 600px)">
-                <source srcset="./image/stages-img1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./image/stages-img1-1024.jpg" media="(max-width: 1200px)"> -->
+                <source srcset="./image/teacher__img-2-320.jpg" media="(max-width: 575px)">
+                <source srcset="./image/teacher__img-2-576.jpg" media="(max-width: 767px)">
+                <source srcset="./image/teacher__img-2-768.jpg" media="(max-width: 991px)">
                 <img src="./image/teacher__img-2-1110.jpg" alt="Фото преподавателя">
               </picture>
               <h3 class="teachers__subtitle item-title">Денис Сергеев</h3>
@@ -132,12 +138,12 @@
               </p>
             </div>
           </li>
-          <li class="col-lg-3">
+          <li class="col-lg-3 col-md-6 col-sm-6">
             <div class="teachers__item">
               <picture class="teachers__img">
-                <!-- <source srcset="./image/stages-img1-320.jpg" media="(max-width: 600px)">
-                <source srcset="./image/stages-img1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./image/stages-img1-1024.jpg" media="(max-width: 1200px)"> -->
+                <source srcset="./image/teacher__img-3-320.jpg" media="(max-width: 575px)">
+                <source srcset="./image/teacher__img-3-576.jpg" media="(max-width: 767px)">
+                <source srcset="./image/teacher__img-3-768.jpg" media="(max-width: 991px)">
                 <img src="./image/teacher__img-3-1110.jpg" alt="Фото преподавателя">
               </picture>
               <h3 class="teachers__subtitle item-title">Михаил Андреев</h3>
@@ -146,12 +152,12 @@
               </p>
             </div>
           </li>
-          <li class="col-lg-3">
+          <li class="col-lg-3 col-md-6 col-sm-6">
             <div class="teachers__item">
               <picture class="teachers__img">
-                <!-- <source srcset="./image/stages-img1-320.jpg" media="(max-width: 600px)">
-                <source srcset="./image/stages-img1-768.jpg" media="(max-width: 992px)">
-                <source srcset="./image/stages-img1-1024.jpg" media="(max-width: 1200px)"> -->
+                <source srcset="./image/teacher__img-4-320.jpg" media="(max-width: 575px)">
+                <source srcset="./image/teacher__img-4-576.jpg" media="(max-width: 767px)">
+                <source srcset="./image/teacher__img-4-768.jpg" media="(max-width: 991px)">
                 <img src="./image/teacher__img-4-1110.jpg" alt="Фото преподавателя">
               </picture>
               <h3 class="teachers__subtitle item-title">Константин Дмитриев</h3>
@@ -170,12 +176,15 @@
           Курсы
         </h2>
         <ul class="row courses__list list-reset-col">
-          <li class="col-lg-6 flex">
+          <li class="col-lg-6 col-md-6 col-sm-6 col-12 flex">
             <div class="courses__item courses__item--time1">
               <span class="courses__time">
                 60&nbsp;часов
               </span>
               <picture class="courses__img">
+                <source srcset="./image/courses__img-1-320.svg" media="(max-width: 575px)">
+                <source srcset="./image/courses__img-1-576.svg" media="(max-width: 767px)">
+                <source srcset="./image/courses__img-1-768.svg" media="(max-width: 991px)">
                 <img src="./image/courses__img-1-1110.jpg" alt="Фон карточки курса">
               </picture>
               <div class="courses__content">
@@ -184,25 +193,28 @@
                     Cinema 4d&nbsp;для начинающих
                   </h3>
                   <p class="courses__descr item-descr">
-                    Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от&nbsp;системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от&nbsp;стандартных подходов.
+                    Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от&nbsp;системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.
                   </p>
                 </div>
                 <a href="#" class="courses__btn btn">Подробнее</a>
               </div>
             </div>
           </li>
-          <li class="col-lg-6 flex">
+          <li class="col-lg-6 col-md-6 col-sm-6 col-12 flex">
             <div class="courses__item">
               <span class="courses__time">
                 40&nbsp;часов
               </span>
               <picture class="courses__img">
+                <source srcset="./image/courses__img-2-320.svg" media="(max-width: 575px)">
+                <source srcset="./image/courses__img-2-576.svg" media="(max-width: 767px)">
+                <source srcset="./image/courses__img-2-768.svg" media="(max-width: 991px)">
                 <img src="./image/courses__img-2-1110.jpg" alt="Фон карточки курса">
               </picture>
               <div class="courses__content">
                 <div class="courses__text">
                   <h3 class="courses__subtitle item-title">
-                    Blender: продвинутый уровень
+                    Blender:&nbsp;продвинутый уровень
                   </h3>
                   <p class="courses__descr item-descr">
                     Но&nbsp;убеждённость некоторых оппонентов в&nbsp;значительной степени обусловливает важность форм воздействия. Внезапно, тщательные исследования конкурентов представлены.
@@ -212,18 +224,21 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 flex">
+          <li class="col-lg-6 col-md-6 col-sm-6 col-12 flex">
             <div class="courses__item">
               <span class="courses__time">
                 40&nbsp;часов
               </span>
               <picture class="courses__img">
+                <source srcset="./image/courses__img-3-320.svg" media="(max-width: 575px)">
+                <source srcset="./image/courses__img-3-576.svg" media="(max-width: 767px)">
+                <source srcset="./image/courses__img-3-768.svg" media="(max-width: 991px)">
                 <img src="./image/courses__img-3-1110.jpg" alt="Фон карточки курса">
               </picture>
               <div class="courses__content">
                 <div class="courses__text">
                   <h3 class="courses__subtitle item-title">
-                    Визуализация в&nbsp;3ds Max
+                    Визуализация в 3ds&nbsp;Max
                   </h3>
                   <p class="courses__descr item-descr">
                     Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.
@@ -233,12 +248,15 @@
               </div>
             </div>
           </li>
-          <li class="col-lg-6 flex">
+          <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 flex">
             <div class="courses__item">
               <span class="courses__time">
                 80&nbsp;часов
               </span>
               <picture class="courses__img">
+                <source srcset="./image/courses__img-4-320.svg" media="(max-width: 575px)">
+                <source srcset="./image/courses__img-4-576.svg" media="(max-width: 767px)">
+                <source srcset="./image/courses__img-4-768.svg" media="(max-width: 991px)">
                 <img src="./image/courses__img-4-1110.jpg" alt="Фон карточки курса">
               </picture>
               <div class="courses__content">
@@ -247,7 +265,7 @@
                     Скульптинг в&nbsp;ZBrush
                   </h3>
                   <p class="courses__descr item-descr">
-                    Разнообразный и&nbsp;богатый опыт говорит нам, что граница обучения кадров требует определения и&nbsp;уточнения прогресса профессионального сообщества! В&nbsp;частности, постоянный количественный рост и&nbsp;сфера нашей активности.
+                    Разнообразный и&nbsp;богатый опыт говорит нам, что граница обучения кадров требует определения и&nbsp;уточнения прогресса профессионального сообщества! В частности, постоянный количественный рост и&nbsp;сфера нашей активности.
                   </p>
                 </div>
                 <a href="#" class="courses__btn btn">Подробнее</a>
@@ -337,5 +355,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
+
 </body>
 </html>

@@ -112,6 +112,10 @@ body {
   outline-offset: 5px;
 }
 
+.header__burger {
+  display: none;
+}
+
 .nav__item:not(:last-child) {
   margin-right: 56px;
 }
@@ -185,7 +189,11 @@ body {
 }
 
 .hero__img {
-  align-items: center;
+  width: 100%;
+  background-image: url('../image/hero__img-1110.svg');
+  background-repeat: no-repeat;
+  background-size: 633px 593px;
+  background-position: right center;
 }
 
 /* advantages */
@@ -197,6 +205,14 @@ body {
 
 .advantages__top {
   margin-bottom: 19px;
+}
+
+.advantages__img {
+  width: 100%;
+  background-image: url('../image/advavtages__img-1110.svg');
+  background-repeat: no-repeat;
+  background-size: 160px 142px;
+  background-position: right 22px;
 }
 
 .advantages__title {
@@ -426,6 +442,7 @@ body {
 }
 
 .footer__reg {
+  padding: 0 3px;
   color: var(--color-purple);
 }
 
